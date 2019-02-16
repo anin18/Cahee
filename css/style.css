@@ -1,0 +1,188 @@
+/*GENERAL STYLE*/
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700');
+
+img {
+    max-width: 100%;   
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    color:#262626;
+    position: relative;
+}
+p {
+    font-weight: 300;
+}
+h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+/*-------------HEADER-------------*/
+header {
+    transition:0.5s linear;
+}
+.header-active {
+    background:#fdfdfd ;
+}
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color:#262626;
+}
+.navbar-nav {
+    background: #fdfdfd ;
+}
+.navbar-nav .nav-item{
+    text-align: center;
+    border-bottom:3px solid red;
+    padding: 0 10px;
+}
+
+/*---------------HOME--------------------*/
+.home {
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+    padding-bottom: 120px !important
+}
+.home .fa {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    font-size: 26px;
+    border:2px solid #262626;
+    border-radius: 30%;
+    padding: 10px 7px;
+}
+/*------------ABOUT--------------------*/
+.about {
+    background: #00C4C4;
+}
+/*-----------SERVICES---------------*/
+.services {
+    background: #70BFFF;
+}
+.services .services-items {
+    background: #FFFFFF;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+
+.services .services-items .services-items-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.services .services-items figure {
+    margin-bottom: 0;
+    border-left: 1px solid #9D9D9D;
+    height: 4.8rem;
+}
+
+.services .services-items figure img {
+    width: 45px;
+    height: 45px;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.services .services-item-title {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-weight: 700;
+}
+/*---------GALLERY------------------*/ 
+.gallery {
+    background: #FFE92F;
+}
+
+/*----------SUBSCRIBE----------------*/
+.subscribe{
+    background-size: cover;
+}
+/*--------------BLOG----------------*/
+.blog {
+    background: #B07CF7;
+}
+.blog img {
+    width: 100%;
+    display: block;
+}
+.blog-img-details {
+    bottom:0%;
+    left: 5%;
+}
+.blog figure {
+    box-shadow: 0 5px 10px #000;
+}
+.blog-img-details a {
+    text-decoration: none;
+}
+.blog-img-date {
+    position: absolute;
+    top:5%;
+    left:5%;
+    width:52px;
+    height: 52px;
+    text-align: center;
+    border-radius: 10px;
+    background: #262626;
+    opacity: 0.6;
+}
+.blog figure::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-image: -moz-linear-gradient(rgba(255,255, 255, 0.1), rgba(5, 5, 5, 0.8));
+    background-image: -webkit-linear-gradient(rgba(255,255, 255, 0.1), rgba(5, 5, 5, 0.8));
+    background-image: -ms-linear-gradient(rgba(255,255, 255, 0.1), rgba(5, 5, 5, 0.8));
+    mix-blend-mode: normal;
+    opacity: 0;
+    transition: 0.6s ease;
+}
+/*-----------CONTACT---------------*/
+.contact .form-control{
+    padding:20px !important;
+}
+.contact .form-control:hover {
+    border-left: 2px solid blue;
+}
+.contact .form-control::placeholder {
+    color:white !important;
+    background: #00C4C4;
+    opacity: 0.6;   
+}
+.contact .form-control:hover::placeholder { 
+    opacity: 1;
+}
+.contact button.btn-info {
+    background: #00C4C4 !important;
+    opacity: 0.6; 
+}
+.contact button.btn-info:hover {
+    opacity: 1; 
+}
+/*-----------FOOTER----------------*/
+footer {
+    background: #262626;
+}
+footer p {
+    margin-bottom: 0;
+}
+.cahee {
+    font-family:'Pacifico', cursive;
+}
